@@ -6,6 +6,7 @@ public class User {
     private String accountId;
     private String token;
     private Long gmtCreate;
+    private Long gmtModified;
 
     public Long getGmtModified() {
         return gmtModified;
@@ -15,7 +16,6 @@ public class User {
         this.gmtModified = gmtModified;
     }
 
-    private Long gmtModified;
 
     public Integer getId() {
         return id;
