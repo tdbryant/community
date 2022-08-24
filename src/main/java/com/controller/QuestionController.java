@@ -1,7 +1,6 @@
 package com.controller;
 
 import com.dto.QuestionDTO;
-import com.mapper.QuestionMapper;
 import com.service.QuestionService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
