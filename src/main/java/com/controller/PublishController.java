@@ -2,8 +2,6 @@ package com.controller;
 
 
 import com.dto.QuestionDTO;
-import com.mapper.QuestionMapper;
-import com.mapper.UserMapper;
 import com.model.Question;
 import com.model.User;
 import com.service.QuestionService;
@@ -34,8 +32,6 @@ public class PublishController {
         model.addAttribute("id",question.getId());
         return "publish";
     }
-
-
 
     @GetMapping("/publish")
     public String publish(){
