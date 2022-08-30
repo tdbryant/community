@@ -8,6 +8,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.io.IOException;
 
+
 @SpringBootTest
 class ApplicationTests {
 
@@ -31,5 +32,4 @@ class ApplicationTests {
             String token = string.split("&")[0].split("=")[1];
         System.out.println(token);
     }
-
 }
