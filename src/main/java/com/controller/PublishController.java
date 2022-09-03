@@ -1,6 +1,7 @@
 package com.controller;
 
 
+import com.cache.TagCache;
 import com.dto.QuestionDTO;
 import com.model.Question;
 import com.model.User;
@@ -30,11 +31,13 @@ public class PublishController {
         model.addAttribute("description",question.getDescription());
         model.addAttribute("tag",question.getTag());
         model.addAttribute("id",question.getId());
+        model.addAttribute("tags",TagCache.get());
         return "publish";
     }
 
     @GetMapping("/publish")
-    public String publish(){
+    public String publish(Model model){
+        model.addAttribute("tags",TagCache.get());
         return "publish";
     }
 
