@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/community.css">
     <script src="/js/jquery-3.4.1.min.js" type="application/javascript"></script>
     <script src="/js/bootstrap.min.js" type="application/javascript"></script>
+    <script src="/js/community.js" type="application/javascript"></script>
 </head>
 
 
@@ -92,9 +93,9 @@
         <div class="col-lg-3 col-md-12 col-sm-12 col-xs-12">
             <div class="list-group section">
                 <a href="/profile/questions"
-                   th:class="${section == 'questions'}? 'active list-group-item' : 'list-group-item'">我的问题</a>
+                   th:class="${section == 'questions'}?'active list-group-item' : 'list-group-item'">我的问题</a>
                 <a href="/profile/replies"
-                   th:class="${section == 'replies'}? 'active list-group-item' : 'list-group-item'">
+                   th:class="${section == 'replies'}?'active list-group-item' : 'list-group-item'">
                     最新回复
                     <span class="badge" th:text="${session.unreadCount}"></span>
                 </a>
@@ -102,6 +103,5 @@
         </div>
     </div>
 </div>
-<div th:insert="~{footer :: foot}"></div>
 </body>
 </html>
